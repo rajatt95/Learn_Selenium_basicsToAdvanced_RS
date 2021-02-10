@@ -1,5 +1,6 @@
 package com.learning.base;
 
+import java.io.FileInputStream;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,10 @@ import org.openqa.selenium.WebElement;
 
 public class TestBase {
 
+	
+	
+	public final static String excel_Sheet = ".//src//test//resources//excel//testdata.xlsx";
+	
 	public final String searchBox_Name = "q";
 	public final String searchBox_textToEnter = "Full Stack Test Automation Engineer";
 

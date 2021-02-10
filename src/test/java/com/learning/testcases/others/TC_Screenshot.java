@@ -46,9 +46,7 @@ public class TC_Screenshot extends TestBase {
 		try {
 			FileUtils.copyFile(screenshot, new File(".//screenshot/" + fileName));
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
-
 	}
 
 	private static void captureElementScreenshot(WebElement element, WebDriver driver) {
