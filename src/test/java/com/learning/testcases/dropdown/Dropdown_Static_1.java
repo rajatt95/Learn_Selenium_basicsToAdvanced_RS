@@ -25,7 +25,7 @@ public class Dropdown_Static_1 extends TestBase {
 		WebElement adultsCountDropdown = driver.findElement(By.id("ctl00_mainContent_ddl_Adult"));
 		Select select = new Select(adultsCountDropdown);
 		holdScript(2);
-		
+
 		select.selectByValue("5");
 		holdScript(2);
 
@@ -38,4 +38,5 @@ public class Dropdown_Static_1 extends TestBase {
 
 	}
 
+	
 }

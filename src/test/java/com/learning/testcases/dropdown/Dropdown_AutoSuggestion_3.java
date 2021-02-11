@@ -21,6 +21,8 @@ public class Dropdown_AutoSuggestion_3 extends TestBase {
 
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
+		
+		
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
 		holdScript(2);
 
@@ -32,12 +34,18 @@ public class Dropdown_AutoSuggestion_3 extends TestBase {
 
 	}
 
+	
+	
+	
+	
 	private static void selectValueFromAutoSuggestedDropdown(WebDriver driver, String locationToSelect,
 			String xpathOfAllLocation) {
 		/*
 		 * List<WebElement> elementsIn_AutoSuggested_DropDown = driver
 		 * .findElements(By.cssSelector("li[class='ui-menu-item'] a"));
-		 */ List<WebElement> elementsIn_AutoSuggested_DropDown = driver.findElements(By.xpath(xpathOfAllLocation));
+		 */
+
+		List<WebElement> elementsIn_AutoSuggested_DropDown = driver.findElements(By.xpath(xpathOfAllLocation));
 
 		for (WebElement option : elementsIn_AutoSuggested_DropDown) {
 			if (option.getText().equalsIgnoreCase(locationToSelect)) {
