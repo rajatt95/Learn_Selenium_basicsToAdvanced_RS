@@ -46,6 +46,19 @@ b) Explicit - WebDriverWait, FluentWait
 14) Apache POI
  -----------------------------------------------
 15) Log4J
+---------------------------
+16) AutoIT
+
+1) Upload a file : 
+ - Build script using AutoIt sofware
+ - Compile it (x86)
+ - Call exe file from Selenium script 
+Runtime.getRuntime().exec(".//src//test//resources//fileUpload.exe");
+
+2) Download the file in your customized target location 
+ - By using ChromeOptions
+ - Check whether file is successfully downloaded or not (at required location)
+ - Delete the older version of File (if present)
 
 
 
